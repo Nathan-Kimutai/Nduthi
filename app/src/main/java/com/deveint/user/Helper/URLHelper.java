@@ -2,14 +2,15 @@ package com.deveint.user.Helper;
 
 public class URLHelper {
 //    public static final String base = "https://courier.deliveryventure.com/";
-    public static final  String base = "http://test.deveint.live/jp_delivery/public/";
+    public static final  String base = "https://test.deveint.live/jp_delivery/public/";
     public static final String access_login = base + "api/login";
     public static final String map_address_url = "https://maps.googleapis.com/maps/api/geocode/";
     public static final String REDIRECT_URL = base;
     public static final String REDIRECT_SHARE_URL = "http://maps.google.com/maps?q=loc:";
     public static final String APP_URL = "https://play.google.com/store/apps/details?id=";
     public static final int client_id = 2;
-    public static final String client_secret = "R43NNVZQpArrvfMcbxFi6E3z6IC1ZQ4QiLEj3hpH";
+//    public static final String client_secret = "R43NNVZQpArrvfMcbxFi6E3z6IC1ZQ4QiLEj3hpH";
+    public static final  String client_secret = "sCOJQQMPn0toqV9AKzKdBkzAXutRiiN5mb13P3WL";
     public static final String STRIPE_TOKEN = "pk_test_pAqnif8mJ1kwh16JXuApB3Y5";
 
     public static final String login = base + "oauth/token";

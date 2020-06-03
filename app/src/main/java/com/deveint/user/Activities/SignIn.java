@@ -71,13 +71,16 @@ import static com.deveint.user.CellMoveApplication.trimMessage;
 
 public class SignIn extends AppCompatActivity {
 
+    //This are the password and email fields
     EditText txtemail, txtpassword;
     TextView lblforgotpassword;
+    //This is the signin button
     Button btnSignIn;
 
+    //TODO Check what is AccessTokenTracker
     AccessTokenTracker accessTokenTracker;
     CallbackManager callbackManager;
-    String accessToken = "";
+    String accessToken = ""; //This is the variable that will hold the accessToken
     String loginBy = "";
     Activity thisActivity;
     Boolean isInternet;
@@ -171,6 +174,8 @@ public class SignIn extends AppCompatActivity {
                 overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
             }
         });
+
+        //This is where you click the button to login
 
         btnSignIn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -541,6 +546,7 @@ public class SignIn extends AppCompatActivity {
         }
     }
 
+    //Check if the email provided in the parameter is correct
     private boolean isValidEmail(String email) {
         String EMAIL_PATTERN = "^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@"
                 + "[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$";
