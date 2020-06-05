@@ -196,9 +196,9 @@ public class Utilities {
             AlertDialog.Builder builder = new AlertDialog.Builder(context);
             LayoutInflater inflater = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             builder.setMessage(message)
-                    .setTitle(context.getResources().getString(R.string.app_name))
+                    .setTitle("Nduthi")
                     .setCancelable(true)
-                    .setIcon(R.mipmap.ic_launcher)
+                    .setIcon(R.drawable.app_icon_trans)
                     .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int id) {
                             dialog.dismiss();

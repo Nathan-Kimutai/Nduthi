@@ -79,8 +79,8 @@ android.app.AlertDialog confirmation_dialogue;
 
              android.app.AlertDialog.Builder builder = new android.app.AlertDialog.Builder(context);
                     LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-                    builder.setTitle(context.getResources().getString(R.string.app_name))
-                            .setIcon(R.mipmap.ic_launcher)
+                    builder.setTitle("Nduthi")
+                            .setIcon(R.drawable.app_icon_trans)
                             .setMessage(context.getResources().getString(R.string.alert));
                     builder.setCancelable(false);
                     builder.setPositiveButton(context.getResources().getString(R.string.yes), new DialogInterface.OnClickListener() {
@@ -159,8 +159,8 @@ android.app.AlertDialog confirmation_dialogue;
 
     public void showGoodsDialog(final Locations locations) {
         AlertDialog.Builder alert = new AlertDialog.Builder(context);
-        alert.setTitle(context.getResources().getString(R.string.app_name));
-        alert.setIcon(R.mipmap.ic_launcher);
+        alert.setTitle("Nduthi");
+        alert.setIcon(R.drawable.app_icon_trans);
 
         View custom = LayoutInflater.from(context).inflate(R.layout.custom_edit, null);
         final EditText input =  custom.findViewById(R.id.desc);

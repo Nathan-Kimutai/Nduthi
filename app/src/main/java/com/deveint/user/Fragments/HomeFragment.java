@@ -849,7 +849,7 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback, Locati
         AlertDialog.Builder builder = new AlertDialog.Builder(activity);
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         builder.setTitle(context.getResources().getString(R.string.app_name))
-                .setIcon(R.mipmap.ic_launcher)
+                .setIcon(R.drawable.app_icon_trans)
                 .setMessage(context.getResources().getString(R.string.emaergeny_call))
                 .setCancelable(false);
         builder.setPositiveButton(context.getResources().getString(R.string.yes), new DialogInterface.OnClickListener() {
@@ -877,8 +877,8 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback, Locati
     private void showCancelRideDialog() {
         AlertDialog.Builder builder = new AlertDialog.Builder(activity);
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        builder.setTitle(context.getResources().getString(R.string.app_name))
-                .setIcon(R.mipmap.ic_launcher)
+        builder.setTitle("Nduthi")
+                .setIcon(R.drawable.app_icon_trans)
                 .setMessage(context.getResources().getString(R.string.cancel_ride_alert));
         builder.setCancelable(false);
         builder.setPositiveButton(context.getResources().getString(R.string.yes), new DialogInterface.OnClickListener() {
@@ -902,8 +902,8 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback, Locati
         View view = LayoutInflater.from(context).inflate(R.layout.cancel_dialog, null);
         final EditText reasonEtxt = view.findViewById(R.id.reason_etxt);
         Button submitBtn = view.findViewById(R.id.submit_btn);
-        builder.setIcon(R.mipmap.ic_launcher)
-                .setTitle(R.string.app_name)
+        builder.setIcon(R.drawable.app_icon_trans)
+                .setTitle("Nduthi")
                 .setView(view)
                 .setCancelable(true);
         reasonDialog = builder.create();
@@ -1304,8 +1304,8 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback, Locati
     private void showDialogForGPSIntent() {
         AlertDialog.Builder builder = new AlertDialog.Builder(context);
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        builder.setTitle(context.getResources().getString(R.string.app_name))
-                .setIcon(R.mipmap.ic_launcher)
+        builder.setTitle("Nduthi")
+                .setIcon(R.drawable.app_icon_trans)
                 .setMessage("GPS is disabled in your device. Enable it?")
                 .setCancelable(false)
                 .setPositiveButton("Enable GPS",
@@ -1502,8 +1502,8 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback, Locati
         Utilities.getAddressUsingLatLng("destination", frmDest, context, latitude, longitude);
         android.support.v7.app.AlertDialog.Builder builder = new android.support.v7.app.AlertDialog.Builder(context);
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        builder.setTitle(context.getString(R.string.app_name))
-                .setIcon(R.mipmap.ic_launcher)
+        builder.setTitle("Nduthi")
+                .setIcon(R.drawable.app_icon_trans)
                 .setMessage(getString(R.string.extend_trip_alert));
         builder.setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
             @Override

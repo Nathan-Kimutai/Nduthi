@@ -118,27 +118,27 @@ public class Payment extends Fragment {
             }
         });
 
-        addCard.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                GoToAddCard();
-            }
-        });
+//        addCard.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                GoToAddCard();
+//            }
+//        });
 
-        payment_list_view.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
-            @Override
-            public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l) {
-                try {
-                    String json = new Gson().toJson(paymentAdapter.getItem(i));
-                    JSONObject object=new JSONObject(json);
-                    utils.print("MyTest", "" + paymentAdapter.getItem(i));
-                    DeleteCardDailog(object);
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-                return false;
-            }
-        });
+//        payment_list_view.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+//            @Override
+//            public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l) {
+//                try {
+//                    String json = new Gson().toJson(paymentAdapter.getItem(i));
+//                    JSONObject object=new JSONObject(json);
+//                    utils.print("MyTest", "" + paymentAdapter.getItem(i));
+//                    DeleteCardDailog(object);
+//                } catch (JSONException e) {
+//                    e.printStackTrace();
+//                }
+//                return false;
+//            }
+//        });
 
 
 

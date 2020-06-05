@@ -340,26 +340,26 @@ public class MainActivity extends AppCompatActivity implements HomeFragment.Home
                         SharedHelper.putKey(context, "current_status", "");
                         startActivity(new Intent(MainActivity.this, ActivitySettings.class));
                         return true;
-                    case R.id.nav_wallet:
-                        drawer.closeDrawers();
-                        /*navItemIndex = 4;
-                        CURRENT_TAG = TAG_WALLET;*/
-                        SharedHelper.putKey(context, "current_status", "");
-                        startActivity(new Intent(MainActivity.this, ActivityWallet.class));
-                        return true;
-                    case R.id.nav_help:
-                        drawer.closeDrawers();
-                       /* navItemIndex = 5;
-                        CURRENT_TAG = TAG_HELP;*/
-                        SharedHelper.putKey(context, "current_status", "");
-                        startActivity(new Intent(MainActivity.this, ActivityHelp.class));
-                        break;
-                    case R.id.nav_share:
-                        // launch new intent instead of loading fragment
-                        //startActivity(new Intent(MainActivity.this, AboutUsActivity.class));
-                        navigateToShareScreen(URLHelper.APP_URL+getPackageName()+"&hl=en");
-                        drawer.closeDrawers();
-                        return true;
+//                    case R.id.nav_wallet:
+//                        drawer.closeDrawers();
+//                        /*navItemIndex = 4;
+//                        CURRENT_TAG = TAG_WALLET;*/
+//                        SharedHelper.putKey(context, "current_status", "");
+//                        startActivity(new Intent(MainActivity.this, ActivityWallet.class));
+//                        return true;
+//                    case R.id.nav_help:
+//                        drawer.closeDrawers();
+//                       /* navItemIndex = 5;
+//                        CURRENT_TAG = TAG_HELP;*/
+//                        SharedHelper.putKey(context, "current_status", "");
+//                        startActivity(new Intent(MainActivity.this, ActivityHelp.class));
+//                        break;
+//                    case R.id.nav_share:
+//                        // launch new intent instead of loading fragment
+//                        //startActivity(new Intent(MainActivity.this, AboutUsActivity.class));
+//                        navigateToShareScreen(URLHelper.APP_URL+getPackageName()+"&hl=en");
+//                        drawer.closeDrawers();
+//                        return true;
                     case R.id.nav_logout:
                         // launch new intent instead of loading fragment
                         //startActivity(new Intent(MainActivity.this, PrivacyPolicyActivity.class));
@@ -612,8 +612,8 @@ public class MainActivity extends AppCompatActivity implements HomeFragment.Home
         if (!isFinishing()) {
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
             LayoutInflater inflater = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            builder .setTitle(context.getString(R.string.app_name))
-                    .setIcon(R.mipmap.ic_launcher)
+            builder .setTitle("Nduthi")
+                    .setIcon(R.drawable.app_icon_trans)
                     .setMessage(getString(R.string.logout_alert));
             builder.setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
                 @Override

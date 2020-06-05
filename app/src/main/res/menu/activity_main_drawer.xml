@@ -18,11 +18,11 @@
             android:title="@string/action_coupon"
             android:actionMenuTextColor="@color/colorAccent"
             />
-        <item
-            android:id="@+id/nav_wallet"
-            android:title="@string/action_wallet"
-            android:actionMenuTextColor="@color/colorAccent"
-            />
+<!--        <item-->
+<!--            android:id="@+id/nav_wallet"-->
+<!--            android:title="@string/action_wallet"-->
+<!--            android:actionMenuTextColor="@color/colorAccent"-->
+<!--            />-->
         <item
             android:id="@+id/passbook"
             android:visible="false"
@@ -35,16 +35,16 @@
             android:visible="false"
             android:actionMenuTextColor="@color/colorAccent"
             />
-        <item
-            android:id="@+id/nav_help"
-            android:title="@string/action_help"
-            android:actionMenuTextColor="@color/colorAccent"
-            />
-        <item
-            android:id="@+id/nav_share"
-            android:title="@string/action_share"
-            android:actionMenuTextColor="@color/colorAccent"
-            />
+<!--        <item-->
+<!--            android:id="@+id/nav_help"-->
+<!--            android:title="@string/action_help"-->
+<!--            android:actionMenuTextColor="@color/colorAccent"-->
+<!--            />-->
+<!--        <item-->
+<!--            android:id="@+id/nav_share"-->
+<!--            android:title="@string/action_share"-->
+<!--            android:actionMenuTextColor="@color/colorAccent"-->
+<!--            />-->
         <item
             android:id="@+id/nav_logout"
             android:title="@string/action_logout"

@@ -1,6 +1,6 @@
 package com.deveint.user.Helper;
 
-public class URLHelper {
+public class    URLHelper {
 //    public static final String base = "https://courier.deliveryventure.com/";
     public static final  String base = "https://test.deveint.live/jp_delivery/public/";
     public static final String access_login = base + "api/login";

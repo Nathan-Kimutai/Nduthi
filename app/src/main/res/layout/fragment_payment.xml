@@ -42,7 +42,7 @@
         <com.deveint.user.Utils.MyBoldTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/payment_methods"
+            android:text="Payment methods"
             android:textColor="@color/black_text_color"
             android:textSize="18sp" />
 
@@ -58,7 +58,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:contentDescription="@string/app_name"
+                android:contentDescription="Nduthi"
                 android:scaleType="fitXY"
                 app:srcCompat="@drawable/money_icon" />
 
@@ -79,19 +79,19 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:layout_gravity="center"
-                android:contentDescription="@string/app_name"
+                android:contentDescription="Nduthi"
                 android:src="@drawable/ic_tick"
                 android:visibility="gone" />
 
         </RelativeLayout>
 
-        <com.deveint.user.Utils.MyBoldTextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="@string/add_money"
-            android:textColor="@color/black_text_color"
-            android:textSize="18sp" />
+<!--        <com.deveint.user.Utils.MyBoldTextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:text="@string/add_money"-->
+<!--            android:textColor="@color/black_text_color"-->
+<!--            android:textSize="18sp" />-->
 
         <com.deveint.user.Utils.MyBoldTextView
             android:id="@+id/empty_text"
@@ -102,21 +102,21 @@
             android:textSize="16sp"
             android:visibility="gone" />
 
-        <ListView
-            android:id="@+id/payment_list_view"
-            android:layout_width="match_parent"
-            android:layoutDirection="locale"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp" />
+<!--        <ListView-->
+<!--            android:id="@+id/payment_list_view"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layoutDirection="locale"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="8dp" />-->
 
-        <com.deveint.user.Utils.MyBoldTextView
-            android:id="@+id/addCard"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="@string/add_payments"
-            android:textColor="@android:color/holo_blue_light"
-            android:textSize="16sp" />
+<!--        <com.deveint.user.Utils.MyBoldTextView-->
+<!--            android:id="@+id/addCard"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:text="@string/add_payments"-->
+<!--            android:textColor="@android:color/holo_blue_light"-->
+<!--            android:textSize="16sp" />-->
 
     </LinearLayout>
 
