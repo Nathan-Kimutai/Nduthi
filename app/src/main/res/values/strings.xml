@@ -8,7 +8,7 @@
     <!ENTITY service "ride">]>
 <resources>
 
-    <string name="app_name">&appName;</string>
+    <string name="app_name">Nduthi</string>
     <!--Google map-->
     <string name="google_map_api" translatable="false">AIzaSyDLLTgaHOzFzfeCZ50jHNBYWxK6lwhxMQI</string>
     <!--Facebook App Id Account Kit -->

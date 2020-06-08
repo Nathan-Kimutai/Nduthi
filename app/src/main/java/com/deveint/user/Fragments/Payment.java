@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AlertDialog;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -263,16 +264,19 @@ public class Payment extends Fragment {
             @Override
             public void onResponse(JSONArray response) {
 
-                utils.print("GetPaymentList", response.toString());
+//                utils.print("GetPaymentList", response.toString());
+                Log.e("GetPaymentList",response.toString());
                 if (response != null && response.length() > 0) {
                     listItems = getArrayListFromJSONArray(response);
-                    if (listItems.isEmpty()) {
-                        //empty_text.setVisibility(View.VISIBLE);
-                        payment_list_view.setVisibility(View.GONE);
-                    } else {
-                        //empty_text.setVisibility(View.GONE);
-                        payment_list_view.setVisibility(View.VISIBLE);
-                    }
+//                    if (listItems.isEmpty()) {
+//                        //empty_text.setVisibility(View.VISIBLE);
+//                        //TODO Change this one incase
+////                        payment_list_view.setVisibility(View.GONE);
+//
+//                    } else {
+//                        //empty_text.setVisibility(View.GONE);
+//                        payment_list_view.setVisibility(View.VISIBLE);
+//                    }
 
                     if(cardArrayList.size()>0)
                         cardArrayList.clear();
@@ -293,7 +297,8 @@ public class Payment extends Fragment {
 
                 } else {
                     //empty_text.setVisibility(View.VISIBLE);
-                    payment_list_view.setVisibility(View.GONE);
+//                    payment_list_view.setVisibility(View.GONE);
+                    Log.i("msg","gargbage");
                 }
                 if ((customDialog != null) && (customDialog.isShowing()))
                     customDialog.dismiss();
