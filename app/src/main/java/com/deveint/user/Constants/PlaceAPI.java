@@ -72,7 +72,7 @@ public class PlaceAPI {
 
             // Create a JSON object hierarchy from the results
             JSONObject jsonObj = new JSONObject(jsonResults.toString());
-            //Log.e("MyTest",""+jsonObj);
+            Log.e("MyTest",""+jsonObj);
             JSONArray predsJsonArray = jsonObj.getJSONArray("predictions");
 
             // Extract the Place descriptions from the results

@@ -2,7 +2,8 @@ package com.deveint.user.Helper;
 
 public class    URLHelper {
 //    public static final String base = "https://courier.deliveryventure.com/";
-    public static final  String base = "https://test.deveint.live/jp_delivery/public/";
+//    public static final  String base = "https://test.deveint.live/jp_delivery/public/";
+    public static final String base = "http://172.104.245.14/jp_delivery/";
     public static final String access_login = base + "api/login";
     public static final String map_address_url = "https://maps.googleapis.com/maps/api/geocode/";
     public static final String REDIRECT_URL = base;
